@@ -34,9 +34,26 @@ h1, h2 {
     
 }
 
+#menu, #logo {
+    line-height: 75px;
+}
+
 #menu li {
-    list-style-type: none;
+    list-style-type: none; /* removes bullet points */
     float: right;
     margin-right: 30px;
     
+}
+
+#menu a {
+    text-decoration: none; /* removes underlines which appear automatically*/
+    color: inherit; 
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a; /* highlights hyperlinks when hovered over*/
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a; /* highlights current page allowing user to know which pager they're on*/
 }
